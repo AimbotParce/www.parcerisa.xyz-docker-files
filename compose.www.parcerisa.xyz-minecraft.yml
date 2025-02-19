@@ -1,0 +1,13 @@
+services:
+  www-parcerisa-xyz:
+    image: docker.parcerisa.xyz:5000/www-parcerisa-xyz:latest
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+      update_config:
+        parallelism: 1
+        delay: 10s
+        order: start-first
+    ports:
+      - "3000:3000"
