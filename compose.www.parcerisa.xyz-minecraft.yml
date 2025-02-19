@@ -1,6 +1,6 @@
 services:
-  www-parcerisa-xyz:
-    image: docker.parcerisa.xyz:5000/www-parcerisa-xyz:latest
+  www-parcerisa-xyz-minecraft:
+    image: docker.parcerisa.xyz:5000/www-parcerisa-xyz-minecraft:latest
     deploy:
       replicas: 1
       restart_policy:
@@ -10,4 +10,4 @@ services:
         delay: 10s
         order: start-first
     ports:
-      - "3000:3000"
+      - "3004:3004"
