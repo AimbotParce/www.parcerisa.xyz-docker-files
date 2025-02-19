@@ -11,3 +11,6 @@ services:
         order: start-first
     ports:
       - "3004:3004"
+    volumes:
+      - "/mnt/hdd2/mcuserLTS/minecraft_backups:/backups"
+      - "/home/mcuser/Home-MC/minecraft/1.19_Vanilla_2023:/server"
